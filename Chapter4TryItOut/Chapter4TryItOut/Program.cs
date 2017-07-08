@@ -13,10 +13,9 @@ namespace Chapter4TryItOut
         {
             string comparison;
             WriteLine("Enter a number:");
-            double var1 = ToDouble (ReadLine());
+            double var1 = Convert.ToDouble (ReadLine());
             WriteLine("Enter another number:");
-            WriteLine("Enter another number:");
-            double var2 = ToDouble(ReadLine());
+            double var2 = Convert.ToDouble(ReadLine());
             if (var1 < var2)
            
                 comparison = "less than";
