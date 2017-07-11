@@ -39,6 +39,7 @@ namespace Ch5TriItOut_page_90_
             myRoute.distance = myDistance;
             Console.WriteLine($"myRoute specifies a direction of {myRoute.direction} " + $"and a distance of {myRoute.distance}");
             Console.ReadKey();
+            
         }
     }
 }

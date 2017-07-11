@@ -15,11 +15,19 @@ namespace IfElsePractice
             string blah = "nice";
             if (favColor == "RED") 
             {
-                Console.WriteLine("red is good");
+                Console.WriteLine("We found a match!!!");
 
+
+                Console.WriteLine($"red is {blah}");
+
+            }
+            else if(favColor == "BLUE")
+            {
+                Console.WriteLine($"{favColor} is good too.");
             }
             else
             {
+                Console.WriteLine("We definitely did not find a match.");
                 Console.WriteLine("Whatever!!");
             }
             Console.ReadKey();
