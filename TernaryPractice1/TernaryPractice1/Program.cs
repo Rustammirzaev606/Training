@@ -23,7 +23,7 @@ namespace TernaryPractice1
             Console.WriteLine("Name your third favorite food:");
             string food3 = Console.ReadLine().ToUpper();
             string foodChoice = (food == "CHICKEN" && food2 == "SHRIMP" && food3 == "MEAT") ? "Good choice" : "Meh";
-            Console.WriteLine(foodChoice.ToUpperInvariant());
+            Console.WriteLine(foodChoice.ToUpper());
             Console.ReadKey();
 
         }
