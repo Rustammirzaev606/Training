@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPF_Practice_1
+namespace WPF_PRACTICE_2
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -27,7 +27,15 @@ namespace WPF_Practice_1
 
         private void btn1_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("How are you today?")
+            string words = txtBox1.Text;
+            //txtBox1.Text = "Awwww";
+            lblText.Content = words;
+        }
+
+        private void second_Click(object sender, RoutedEventArgs e)
+        {
+            Second sec = new Second();
+            sec.ShowDialog();
         }
     }
 }

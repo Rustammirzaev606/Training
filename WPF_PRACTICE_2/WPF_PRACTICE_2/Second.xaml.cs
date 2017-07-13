@@ -10,24 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPF_Practice_1
+namespace WPF_PRACTICE_2
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Second.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Second : Window
     {
-        public MainWindow()
+        public Second()
         {
             InitializeComponent();
-        }
-
-        private void btn1_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("How are you today?")
         }
     }
 }

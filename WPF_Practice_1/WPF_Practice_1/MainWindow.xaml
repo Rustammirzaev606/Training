@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Practice_1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="NewWindow" Height="350" Width="525">
     <Grid>
-        
+        <Button x:Name="btn1" Content="LICK ME!" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.307,0.6" Click="btn1_Click"/>
+
     </Grid>
 </Window>
