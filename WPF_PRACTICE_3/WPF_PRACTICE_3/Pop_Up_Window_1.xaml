@@ -1,0 +1,14 @@
+﻿<Window x:Class="WPF_PRACTICE_3.Pop_Up_Window_1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_PRACTICE_3"
+        mc:Ignorable="d"
+        Title="Pop_Up_Window_1" Height="342" Width="527">
+    <Grid>
+        <Label x:Name="lblKFC" Content="I Like KFC Chicken!" HorizontalAlignment="Left" Margin="351,10,0,0" VerticalAlignment="Top" Width="158"/>
+        <Label x:Name="lblBK" Content="I Like BK Burgers!" HorizontalAlignment="Left" Margin="351,41,0,0" VerticalAlignment="Top" Width="160"/>
+
+    </Grid>
+</Window>
