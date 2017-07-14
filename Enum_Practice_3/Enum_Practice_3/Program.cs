@@ -36,9 +36,11 @@ namespace Enum_Practice_3
                     BMW();
                     break;
                 default:
-                    Console.WriteLine("Good Luck catcging that bus!");
+                    Console.WriteLine("Good Luck catching that bus!");
+                    Console.ReadKey();
                     break;
             }
+            
         }
         public static void Toyota()
         {
