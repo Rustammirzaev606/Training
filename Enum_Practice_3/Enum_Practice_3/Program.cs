@@ -35,6 +35,9 @@ namespace Enum_Practice_3
                 case Car.BMW:
                     BMW();
                     break;
+                default:
+                    Console.WriteLine("Good Luck catcging that bus!");
+                    break;
             }
         }
         public static void Toyota()
