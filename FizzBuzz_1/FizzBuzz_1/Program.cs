@@ -12,7 +12,7 @@ namespace FizzBuzz_1
         {
             Console.WriteLine("For those who do not know: FizzBuzz is a quite popular childrens game. Counting from 1 to 100, and every time a number is divisible by 3 calling Fizz, every time a number is divisible by 5 calling Buzz and every time a number is divisible by 3 and 5, calling FizzBuzz instead of the number");
             int i = 1;
-            string fb;
+            string fb ;
             for (i = 1; i <= 100; ++i)
             {
                 
@@ -35,7 +35,7 @@ namespace FizzBuzz_1
                     
 
                 }
-                Console.WriteLine(i);
+                Console.WriteLine(fb);
 
 
                 Console.ReadKey();

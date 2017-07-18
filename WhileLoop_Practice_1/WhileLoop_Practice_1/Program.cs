@@ -18,7 +18,7 @@ namespace WhileLoop_Practice_1
             Console.WriteLine("What is your password?:");
             string pw = Console.ReadLine();
 
-            while ((inputName != userName) && ( pw != password))
+            while ((inputName != userName) || ( pw != password))
             {
                 Console.WriteLine($"The username and/or password was incorrect!");
                 while (inputName != userName)
