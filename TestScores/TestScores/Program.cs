@@ -39,8 +39,13 @@ namespace TestScores
                     count++;
                 }
             }
+            else
+            {
+                Console.WriteLine("Bruh u broke it!");
+            }
             
-            Console.WriteLine($"CORRECT!{inputCheck}!");
+                Console.WriteLine($"CORRECT!{inputCheck}!");
+            
             int avTotal = total / count;
             //Console.WriteLine($"Total is  {total}, count is {count}, average is {avTotal}");
             Console.WriteLine($"Total numbers entered: {count}. Total values entered: {total}. Average value entered: {avTotal}");
