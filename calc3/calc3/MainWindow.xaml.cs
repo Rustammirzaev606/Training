@@ -137,19 +137,19 @@ namespace calc3
 
             if (op == "+")
             {
-                textBox.Text += "=" + (op1 + op2);
+                textBox.Text += " = " + (op1 + op2);
             }
             else if (op == "-")
             {
-                textBox.Text += "=" + (op1 - op2);
+                textBox.Text += " = " + (op1 - op2);
             }
             else if (op == "*")
             {
-                textBox.Text += "=" + (op1 * op2);
+                textBox.Text += " = " + (op1 * op2);
             }
             else
             {
-                textBox.Text += "=" + (op1 / op2);
+                textBox.Text += " = " + (op1 / op2);
             }
         }
 
@@ -161,6 +161,11 @@ namespace calc3
         private void btn_off_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
+        }
+
+        private void btn_dot_Click(object sender, RoutedEventArgs e)
+        {
+            textBox.Text = textBox.Text + ".";
         }
     }
 }
