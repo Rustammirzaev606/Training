@@ -92,7 +92,7 @@ namespace calc3
 
         private void btn_div_Click(object sender, RoutedEventArgs e)
         {
-            textBox.Text = textBox.Text + ":";
+            textBox.Text = textBox.Text + "/";
         }
 
         private void btn_equal_Click(object sender, RoutedEventArgs e)

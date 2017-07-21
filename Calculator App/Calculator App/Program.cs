@@ -11,8 +11,8 @@ namespace Calculator_App
         static void Main(string[] args)
         {
             Console.WriteLine("BADASS CALC 99");
-            int firstNum;
-            int secondNum;
+            double firstNum;
+            double secondNum;
             string end;
             string oper;
             int operNumb;
@@ -21,53 +21,66 @@ namespace Calculator_App
             {
                 Console.WriteLine("Enter first nubmer:");
                 string firstNumber = Console.ReadLine();
-                int.TryParse(firstNumber, out firstNum);
+                double.TryParse(firstNumber, out firstNum);
+                while (!double.TryParse(firstNumber, out firstNum))
+                {
+                    Console.WriteLine($"You entered invalid value for first number!\nPlease enter a first number:");
+                    firstNumber = Console.ReadLine();
+                    double.TryParse(firstNumber, out firstNum);
+                }
                 Console.WriteLine("What operation would you like to perform?\n 1 - adding?\n 2 - subtraction?\n 3 - multiplication?\n 4 - division?");
 
                 oper = Console.ReadLine();
                 int.TryParse(oper, out operNumb);
                 while ((!int.TryParse(oper, out operNumb) && operNumb > 4 && operNumb < 1) || !int.TryParse(oper, out operNumb) || operNumb > 4 || operNumb < 1)
                 {
-                    Console.WriteLine("You chose wrogn operation!\nWhat operation would you like to perform?\n 1 - adding?\n 2 - subtraction?\n 3 - multiplication?\n 4 - division?");
+                    Console.WriteLine("You chose wrong operation!\nWhat operation would you like to perform?\n 1 - adding?\n 2 - subtraction?\n 3 - multiplication?\n 4 - division?");
                     oper = Console.ReadLine();
                     int.TryParse(oper, out operNumb);
                 }
                 Console.WriteLine($"Enter a second number:");
                 string secondNumber = Console.ReadLine();
-                int.TryParse(secondNumber, out secondNum);
-                while (!int.TryParse(firstNumber, out firstNum))
+                double.TryParse(secondNumber, out secondNum);
+                while (!double.TryParse(secondNumber, out secondNum))
                 {
-                    Console.WriteLine($"You entered invalid value of {firstNumber}!\nPlease enter a first number:");
-                    firstNumber = Console.ReadLine();
-                    int.TryParse(firstNumber, out firstNum);
+                    Console.WriteLine($"You entered invalid value for second number!\nPlease enter second number:");
+                    secondNumber = Console.ReadLine();
+                    double.TryParse(secondNumber, out secondNum);
+
                 }
+                //while (!int.TryParse(firstNumber, out firstNum))
+                //{
+                //    Console.WriteLine($"You entered invalid value for first number!\nPlease enter a first number:");
+                //    firstNumber = Console.ReadLine();
+                //    int.TryParse(firstNumber, out firstNum);
+                //}
                 //while ((!int.TryParse(oper, out operNumb) && operNumb > 4 && operNumb < 1) || !int.TryParse(oper, out operNumb) || operNumb > 4 || operNumb < 1)
                 //{
                 //    Console.WriteLine("You chose wrogn operation!\nWhat operation would you like to perform?\n 1 - adding?\n 2 - subtraction?\n 3 - multiplication?\n 4 - division?");
                 //    oper = Console.ReadLine();
                 //    int.TryParse(oper, out operNumb);
                 //}
-                while (!int.TryParse(secondNumber, out secondNum))
-                {
-                    Console.WriteLine($"You entered invalid value of {secondNumber}!\nPlease enter second number:");
-                    secondNumber = Console.ReadLine();
-                    int.TryParse(secondNumber, out secondNum);
+                //while (!int.TryParse(secondNumber, out secondNum))
+                //{
+                //    Console.WriteLine($"You entered invalid value for second number!\nPlease enter second number:");
+                //    secondNumber = Console.ReadLine();
+                //    int.TryParse(secondNumber, out secondNum);
 
-                }
+                //}
                 
                 if (operNumb == 1)
                 {
-                    int add = Adding(firstNum, secondNum);
+                    double add = Adding(firstNum, secondNum);
                     Console.WriteLine($"{firstNum} + {secondNum} = {add} ");
                 }
                 else if (operNumb == 2)
                 {
-                    int sub = Subs(firstNum, secondNum);
+                    double sub = Subs(firstNum, secondNum);
                     Console.WriteLine($"{firstNum} - {secondNum} = {sub}");
                 }
                 else if (operNumb == 3)
                 {
-                    int mul = Mult(firstNum, secondNum);
+                    double mul = Mult(firstNum, secondNum);
                     Console.WriteLine($"{firstNum} * {secondNum} = {mul}");
                 }
                 else if (operNumb == 4)
@@ -78,13 +91,13 @@ namespace Calculator_App
                     }
                     else if (firstNum % secondNum != 0)
                     {
-                        int remainder = Rem(firstNum, secondNum);
-                        int div = Divis(firstNum, secondNum);
+                        double remainder = Rem(firstNum, secondNum);
+                        double div = Divis(firstNum, secondNum);
                         Console.WriteLine($"{firstNum} : {secondNum} = {div} with a remainder of {remainder} ");
                     }
                     else
                     {
-                        int div = Divis(firstNum, secondNum);
+                        double div = Divis(firstNum, secondNum);
                         Console.WriteLine($"{firstNum} : {secondNum} = {div}");
                     }
                 }
@@ -100,23 +113,23 @@ namespace Calculator_App
             Console.ReadKey();
 
         }
-        public static int Adding(int firstNum, int secondNum)
+        public static double Adding(double firstNum, double secondNum)
         {
             return firstNum + secondNum;
         }
-        public static int Subs(int firstNum, int secondNum)
+        public static double Subs(double firstNum, double secondNum)
         {
             return firstNum - secondNum;
         }
-        public static int Mult(int firstNum, int secondNum)
+        public static double Mult(double firstNum, double secondNum)
         {
             return firstNum * secondNum;
         }
-        public static int Divis(int firstNum, int secondNum)
+        public static double Divis(double firstNum, double secondNum)
         {
             return firstNum / secondNum;
         }
-        public static int Rem(int firstNumb, int secondNum)
+        public static double Rem(double firstNumb, double secondNum)
         {
             return firstNumb % secondNum;
         }
