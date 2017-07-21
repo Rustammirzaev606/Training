@@ -23,8 +23,15 @@ namespace Calculator_App
                 string firstNumber = Console.ReadLine();
                 int.TryParse(firstNumber, out firstNum);
                 Console.WriteLine("What operation would you like to perform?\n 1 - adding?\n 2 - subtraction?\n 3 - multiplication?\n 4 - division?");
+
                 oper = Console.ReadLine();
                 int.TryParse(oper, out operNumb);
+                while ((!int.TryParse(oper, out operNumb) && operNumb > 4 && operNumb < 1) || !int.TryParse(oper, out operNumb) || operNumb > 4 || operNumb < 1)
+                {
+                    Console.WriteLine("You chose wrogn operation!\nWhat operation would you like to perform?\n 1 - adding?\n 2 - subtraction?\n 3 - multiplication?\n 4 - division?");
+                    oper = Console.ReadLine();
+                    int.TryParse(oper, out operNumb);
+                }
                 Console.WriteLine($"Enter a second number:");
                 string secondNumber = Console.ReadLine();
                 int.TryParse(secondNumber, out secondNum);
@@ -34,12 +41,12 @@ namespace Calculator_App
                     firstNumber = Console.ReadLine();
                     int.TryParse(firstNumber, out firstNum);
                 }
-                while ((!int.TryParse(oper, out operNumb) && operNumb > 4 && operNumb < 1) || !int.TryParse(oper, out operNumb) || operNumb > 4 || operNumb < 1)
-                {
-                    Console.WriteLine("You chose wrogn operation!\nWhat operation would you like to perform?\n 1 - adding?\n 2 - subtraction?\n 3 - multiplication?\n 4 - division?");
-                    oper = Console.ReadLine();
-                    int.TryParse(oper, out operNumb);
-                }
+                //while ((!int.TryParse(oper, out operNumb) && operNumb > 4 && operNumb < 1) || !int.TryParse(oper, out operNumb) || operNumb > 4 || operNumb < 1)
+                //{
+                //    Console.WriteLine("You chose wrogn operation!\nWhat operation would you like to perform?\n 1 - adding?\n 2 - subtraction?\n 3 - multiplication?\n 4 - division?");
+                //    oper = Console.ReadLine();
+                //    int.TryParse(oper, out operNumb);
+                //}
                 while (!int.TryParse(secondNumber, out secondNum))
                 {
                     Console.WriteLine($"You entered invalid value of {secondNumber}!\nPlease enter second number:");
