@@ -47,27 +47,7 @@ namespace Calculator_App
                     secondNumber = Console.ReadLine();
                     double.TryParse(secondNumber, out secondNum);
 
-                }
-                //while (!int.TryParse(firstNumber, out firstNum))
-                //{
-                //    Console.WriteLine($"You entered invalid value for first number!\nPlease enter a first number:");
-                //    firstNumber = Console.ReadLine();
-                //    int.TryParse(firstNumber, out firstNum);
-                //}
-                //while ((!int.TryParse(oper, out operNumb) && operNumb > 4 && operNumb < 1) || !int.TryParse(oper, out operNumb) || operNumb > 4 || operNumb < 1)
-                //{
-                //    Console.WriteLine("You chose wrogn operation!\nWhat operation would you like to perform?\n 1 - adding?\n 2 - subtraction?\n 3 - multiplication?\n 4 - division?");
-                //    oper = Console.ReadLine();
-                //    int.TryParse(oper, out operNumb);
-                //}
-                //while (!int.TryParse(secondNumber, out secondNum))
-                //{
-                //    Console.WriteLine($"You entered invalid value for second number!\nPlease enter second number:");
-                //    secondNumber = Console.ReadLine();
-                //    int.TryParse(secondNumber, out secondNum);
-
-                //}
-                
+                }                                
                 if (operNumb == 1)
                 {
                     double add = Adding(firstNum, secondNum);
@@ -101,9 +81,6 @@ namespace Calculator_App
                         Console.WriteLine($"{firstNum} : {secondNum} = {div}");
                     }
                 }
-
-
-
                 Console.WriteLine("Press Enter or type YES to continue or NO to end to exit:");
                 end = Console.ReadLine().ToLower();
 
