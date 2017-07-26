@@ -10,34 +10,34 @@ class DebugFive3
       char letter = 'A';
       int number = 0;      
       const int NUMINROW = 20;
-      //const int LOW = 0;
-      //const int HIGH = 99;
-      while (letter <= 'Z')
-      {           
-            if (number % NUMINROW == 0)
-            {
-                WriteLine();
-            }
-            Write($"{letter}{number.ToString("D2")} ");
-            number++;
-            if (number == 100)
-            {
-                number = 0;
-                ++letter;
-            }
-      }
-        //for (letter = 'A'; letter <= 'Z'; ++letter)
-        //{
-        //    for (number = LOW; number <= HIGH; ++number)
-        //    {
-        //        if (number % NUMINROW == 0)
-        //        {
-        //            WriteLine();
-        //        }
-        //        Write("{0}{1} ", letter, number.ToString("D2"));
-
-        //    }
+        const int LOW = 0;
+        const int HIGH = 99;
+        //while (letter <= 'Z')
+        //{           
+        //      if (number % NUMINROW == 0)
+        //      {
+        //          WriteLine();
+        //      }
+        //      Write($"{letter}{number.ToString("D2")} ");
+        //      number++;
+        //      if (number == 100)
+        //      {
+        //          number = 0;
+        //          ++letter;
+        //      }
         //}
+        for (letter = 'A'; letter <= 'Z'; ++letter)
+        {
+            for (number = LOW; number <= HIGH; ++number)
+            {
+                if (number % NUMINROW == 0)
+                {
+                    WriteLine();
+                }
+                Write("{0}{1} ", letter, number.ToString("D2"));
+
+            }
+        }
         ReadLine();
    }
 }
