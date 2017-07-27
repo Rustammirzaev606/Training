@@ -24,6 +24,7 @@ class DebugFive4
          count = count + 1;
             
       }
+
         if (howMany >= count)
         {
             WriteLine("Your guess was too high.");
@@ -37,7 +38,16 @@ class DebugFive4
             WriteLine("Your guess was correct.");
         }
         WriteLine($"It takes {count} days to reach {LIMIT.ToString("C")} when you double {START.ToString("C")} every day! ");
-      
+        double x = 0.01;
+        for (int i = 0; i < 30; i++)
+        {
+            x *=  2;
+        }
+        Console.WriteLine($"In 30 days we will have {x.ToString("C")}");
+        Console.ReadKey();
+
+
+
    }
 }
 

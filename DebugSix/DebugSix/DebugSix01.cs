@@ -9,7 +9,7 @@ class DebugSix01
       WriteLine("Items for sale:");
         for (int x = 0; x < items.Length; ++x)
         {
-            WriteLine("{0} for {1}", items[x], prices[x].ToString("C"));
+            WriteLine("{0,12} for {1,10}", items[x], prices[x].ToString("C"));
         }
    }
 }
