@@ -7,6 +7,7 @@ class DebugSix04
 {
     public static void SixFOur()
     {
+        
         const int QUIT = 999;
         int[] numbers = new int[20];
         int x = 0;
