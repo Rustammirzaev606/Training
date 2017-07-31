@@ -12,6 +12,7 @@ namespace Debug_7_8
         {
             //DebugSeven1.SevenOne();
             //DebugSeven2.SevemTwo();
+
             //DebugEight1.EightOnve();
             DebugEight2.EightTwo();
 
