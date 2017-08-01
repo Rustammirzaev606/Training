@@ -15,7 +15,7 @@ namespace InheritanceHomework2
         public void RunTime()
         {
             
-            for (int y = 1; y <= 10; y++)
+            for (int y = 0; y <= 10; y++)
             {
                 Console.WriteLine($"{x} * {y} = {x * y}");
             }

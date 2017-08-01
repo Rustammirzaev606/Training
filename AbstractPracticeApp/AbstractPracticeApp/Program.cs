@@ -4,13 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InheritanceHomework3
+namespace AbstractPracticeApp
 {
     class Program
     {
         static void Main(string[] args)
         {
-
+            Car donkey = new Car();
+            donkey.DisplayEngineFormula();
+            Console.WriteLine(donkey.DisplayEngineFormula());
+            Console.ReadLine();
         }
     }
 }
