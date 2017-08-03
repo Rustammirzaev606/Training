@@ -29,6 +29,16 @@ namespace BankApp_WPF_2
             InitializeComponent();
 
         }
+        private void txtBoxInput_GotFocus(object sender, RoutedEventArgs e)
+        {
+            txtBoxInput.Text = "";
+        }
+
+
+        private void txtBoxInput_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+        }
 
         private void button_Click(object sender, RoutedEventArgs e) //depo
         {
@@ -50,7 +60,23 @@ namespace BankApp_WPF_2
 
         private void button1_Click(object sender, RoutedEventArgs e) //withdraw
         {
+            tempStr2 = txtBoxInput.Text;
+            double.TryParse(tempStr2, out temp2);
+            if(!double.TryParse(tempStr2, out temp2))
+            {
+                txtBoxInput.Text = "Error. Try again";
+            }
+            else if(balance < temp2)
+            {
+                txtBoxInput.Text = "Insufficient funds";
+            }
+            else
+            {
+                balance -= temp2;
+                txtBoxInput.Clear();
+            }
 
+            Balance.Content = balance.ToString("C");
         }
     }
 }
