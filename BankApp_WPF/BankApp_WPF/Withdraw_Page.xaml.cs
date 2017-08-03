@@ -13,30 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-
-namespace WPF_PRACTICE_2
+namespace BankApp_WPF
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Withdraw_Page.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Withdraw_Page : Page
     {
-        public MainWindow()
+        public Withdraw_Page()
         {
             InitializeComponent();
-        }
-
-        private void btn1_Click(object sender, RoutedEventArgs e)
-        {
-            string words = txtBox1.Text;
-            //txtBox1.Text = "Awwww";
-            lblText.Content = words;
-        }
-
-        private void second_Click(object sender, RoutedEventArgs e)
-        {
-            Second sec = new Second();
-                
         }
     }
 }

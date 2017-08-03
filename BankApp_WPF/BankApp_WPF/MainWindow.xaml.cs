@@ -27,12 +27,13 @@ namespace BankApp_WPF
 
         private void btnDeposit_Click(object sender, RoutedEventArgs e)
         {
-
+            var Wp = new Withdraw_Page();
+            
         }
 
         private void btnWithdraw_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
     }
 }
