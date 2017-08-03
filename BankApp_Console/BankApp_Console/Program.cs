@@ -16,7 +16,7 @@ namespace BankApp_Console
             Console.WriteLine("Hello!Welcome to Rustam's Bank.");
             do
             {
-                Console.WriteLine($"How can we help you?\n1 - Deposit:\n2 - Withdraw:\n3 - Balance:");
+                Console.WriteLine($"How can we help you?\n1 - Deposit:\n2 - Withdraw:\n3 - Balance:  {balance}");
                 tempInput = Console.ReadLine().ToLower();
                 if (tempInput == "1" || tempInput == "deposit")
                 {
