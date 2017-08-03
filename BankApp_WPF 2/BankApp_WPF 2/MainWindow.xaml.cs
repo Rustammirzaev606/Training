@@ -22,6 +22,7 @@ namespace BankApp_WPF_2
     {
         double balance = 1000;
         double temp1, temp2;
+        string tempStr1, tempStr2;
         public MainWindow()
         {
             
@@ -29,12 +30,25 @@ namespace BankApp_WPF_2
 
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e) //depo
         {
+            tempStr1 = txtBoxInput.Text;
+            double.TryParse(tempStr1, out temp1);
+            if(!double.TryParse(tempStr1, out temp1))
+            {
+                txtBoxInput.Text = "Error. Try again";
+            }
+            else
+            {
+                balance += temp1;
+                txtBoxInput.Clear();
+            }
+            
+            Balance.Content = balance.ToString("C");
 
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void button1_Click(object sender, RoutedEventArgs e) //withdraw
         {
 
         }
