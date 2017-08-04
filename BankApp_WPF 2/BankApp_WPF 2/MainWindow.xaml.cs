@@ -40,13 +40,20 @@ namespace BankApp_WPF_2
             
         }
 
+        private void btnHelp_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(" CEO / GM / PRESIDENT\n RUSTAM MIRZAEV\n (216) 801 - 6162\n RustamMirzaev606@gmail.com");
+        }
+
         private void button_Click(object sender, RoutedEventArgs e) //depo
         {
+            
             tempStr1 = txtBoxInput.Text;
             double.TryParse(tempStr1, out temp1);
             if(!double.TryParse(tempStr1, out temp1))
             {
-                txtBoxInput.Text = "Error. Try again";
+                //txtBoxInput.Text = "Error. Try again";
+                MessageBox.Show("Error.Try again!");
             }
             else
             {
@@ -64,11 +71,13 @@ namespace BankApp_WPF_2
             double.TryParse(tempStr2, out temp2);
             if(!double.TryParse(tempStr2, out temp2))
             {
-                txtBoxInput.Text = "Error. Try again";
+                //txtBoxInput.Text = "Error. Try again";
+                MessageBox.Show("Error.Try again!");
             }
             else if(balance < temp2)
             {
-                txtBoxInput.Text = "Insufficient funds";
+                //txtBoxInput.Text = "Insufficient funds";
+                MessageBox.Show("Insufficient funds");
             }
             else
             {

@@ -86,7 +86,7 @@ namespace BankApp_Console
         void ByeBye()
         {
             string email = "RustamMirzaev606@gmail.com", phone = "(216)801-6162", firstName = "Rustam", lastName = "Mirzaev";
-            Console.WriteLine($"Thank you for using our bank.\nCEO {firstName} {lastName}\n{phone}\n{email}");
+            Console.WriteLine($"Thank you for using our bank.\nCEO/GM/PRESIDENT {firstName} {lastName}\n{phone}\n{email}");
 
         }
     }
