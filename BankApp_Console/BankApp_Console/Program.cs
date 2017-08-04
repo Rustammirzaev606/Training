@@ -13,10 +13,10 @@ namespace BankApp_Console
             double balance = 1000;
             string tempInput, decision;
             Program bank = new Program();
-            Console.WriteLine("Hello!Welcome to Rustam's Bank.");
+            Console.WriteLine("Hello! Welcome to Rustam's Bank.");
             do
             {
-                Console.WriteLine($"How can we help you?\n1 - Deposit:\n2 - Withdraw:\n3 - Balance:  {balance}");
+                Console.WriteLine($"How can we help you?\n1 - Deposit:\n2 - Withdraw:\n3 - Balance:  {balance.ToString("C")}");
                 tempInput = Console.ReadLine().ToLower();
                 if (tempInput == "1" || tempInput == "deposit")
                 {
@@ -63,7 +63,7 @@ namespace BankApp_Console
             {
                 balance -= tempWithd;
             }
-            Console.WriteLine($"We are printing {tempWithd.ToString("C")} for You.\nNew balance is {balance.ToString("C")}");
+            Console.WriteLine($"We are printing {tempWithd.ToString("C")} for You.\n\nNew balance is {balance.ToString("C")}");
         }
         void Deposit(ref double balance)
         {
@@ -80,13 +80,13 @@ namespace BankApp_Console
                 double.TryParse(tempInput, out tempDepo);
             }
             balance += tempDepo;
-            Console.WriteLine($"We added {tempDepo.ToString("C")} to your balance!\nNew balance is {balance.ToString("C")}");
+            Console.WriteLine($"We added {tempDepo.ToString("C")} to your balance!\n\nNew balance is {balance.ToString("C")}");
 
         }
         void ByeBye()
         {
             string email = "RustamMirzaev606@gmail.com", phone = "(216)801-6162", firstName = "Rustam", lastName = "Mirzaev";
-            Console.WriteLine($"Thank you for using our bank.\nCEO/GM/PRESIDENT {firstName} {lastName}\n{phone}\n{email}");
+            Console.WriteLine($"Thank you for using our bank.\nCEO/GM/PRESIDENT \n{firstName} {lastName}\n{phone}\n{email}");
 
         }
     }
