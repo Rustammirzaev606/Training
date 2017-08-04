@@ -55,6 +55,11 @@ namespace BankApp_WPF_2
                 //txtBoxInput.Text = "Error. Try again";
                 MessageBox.Show("Error.Try again!");
             }
+            else if (temp1 < 0)
+            {
+                MessageBox.Show("Please dont use negative values!");
+
+            }
             else
             {
                 balance += temp1;
@@ -73,6 +78,10 @@ namespace BankApp_WPF_2
             {
                 //txtBoxInput.Text = "Error. Try again";
                 MessageBox.Show("Error.Try again!");
+            }
+            else if(temp2 < 0)
+            {
+                MessageBox.Show("Please dont use negative numbers!");
             }
             else if(balance < temp2)
             {

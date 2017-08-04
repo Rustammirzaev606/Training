@@ -13,7 +13,7 @@ namespace BankApp_Console
             double balance = 1000;
             string tempInput, decision;
             Program bank = new Program();
-            Console.WriteLine("Hello! Welcome to Rustam's Bank.");
+            Console.WriteLine("Hello! Welcome to Rustam's BadAss Bank.");
             do
             {
                 Console.WriteLine($"How can we help you?\n1 - Deposit:\n2 - Withdraw:\n3 - Balance:  {balance.ToString("C")}");
@@ -34,7 +34,7 @@ namespace BankApp_Console
                 {
                     Console.WriteLine("Ooops! Something went wrong!");
                 }
-                Console.WriteLine("\nWould you like to make another transaction? Or type NO or EXIT to finish the programm:");
+                Console.WriteLine("\n Press Enter to make another transaction. Or type NO or EXIT to finish the programm:");
                 decision = Console.ReadLine().ToLower();
             } while (decision != "no" ^ decision != "n" ^ decision != "exit");
             bank.ByeBye();
@@ -53,16 +53,45 @@ namespace BankApp_Console
                 tempInput = Console.ReadLine();
                 double.TryParse(tempInput, out tempWithd);
             }
-            if (tempWithd > balance)
+            if (tempWithd < 0)
             {
-                Console.WriteLine("Insufficient funds! Try to withdraw another value:");
-                tempInput = Console.ReadLine();
-                double.TryParse(tempInput, out tempWithd);
+                
+                while (!double.TryParse(tempInput, out tempWithd))
+                {
+                    Console.WriteLine("Sorry, we dont understand You.\nHow much would You like to withdraw?:");
+                    tempInput = Console.ReadLine();
+                    double.TryParse(tempInput, out tempWithd);
+                }
+                while (tempWithd < 0)
+                {
+                    Console.WriteLine("Please dont use negative values! Try again!:");
+                    tempInput = Console.ReadLine();
+                    double.TryParse(tempInput, out tempWithd);
+
+                }
+
+            }
+            else if (tempWithd > balance)
+            {
+                while (!double.TryParse(tempInput, out tempWithd))
+                {
+                    Console.WriteLine("Sorry, we dont understand You.\nHow much would You like to withdraw?:");
+                    tempInput = Console.ReadLine();
+                    double.TryParse(tempInput, out tempWithd);
+                }
+                while (tempWithd > balance)
+                {
+                    Console.WriteLine("Please dont use negative values! Try again!:");
+                    tempInput = Console.ReadLine();
+                    double.TryParse(tempInput, out tempWithd);
+
+                }
             }
             else
             {
-                balance -= tempWithd;
+                Console.WriteLine("Oooop! Something went wrong!");
             }
+            balance -= tempWithd;
             Console.WriteLine($"We are printing {tempWithd.ToString("C")} for You.\n\nNew balance is {balance.ToString("C")}");
         }
         void Deposit(ref double balance)
@@ -73,12 +102,23 @@ namespace BankApp_Console
             Console.WriteLine("How much would you like to deposit?:");
             tempInput = Console.ReadLine();
             double.TryParse(tempInput, out tempDepo);
-            while(!double.TryParse(tempInput, out tempDepo))
+            while (!(tempDepo > 0))
             {
-                Console.WriteLine("Sorry, we dont understand You.\nHow much would You like to deposit?:");
-                tempInput = Console.ReadLine();
-                double.TryParse(tempInput, out tempDepo);
+                while (!double.TryParse(tempInput, out tempDepo))
+                {
+                    Console.WriteLine("Sorry, we dont understand You.\nHow much would You like to deposit?:");
+                    tempInput = Console.ReadLine();
+                    double.TryParse(tempInput, out tempDepo);
+                }
+                while (tempDepo < 0)
+                {
+                    Console.WriteLine("Please dont use negative values! Try again!");
+                    tempInput = Console.ReadLine();
+                    double.TryParse(tempInput, out tempDepo);
+
+                }
             }
+
             balance += tempDepo;
             Console.WriteLine($"We added {tempDepo.ToString("C")} to your balance!\n\nNew balance is {balance.ToString("C")}");
 

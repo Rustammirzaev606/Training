@@ -15,7 +15,10 @@ namespace ConstructorAndDestructorApp
         int important1;
         int important2;
 
-
+        public Professor()
+        {
+            Console.WriteLine("BRUH");
+        }
         public Professor(string FirstName, string LastName)  //FirstName and LastName are properties
         {
             fName = FirstName;
