@@ -14,6 +14,10 @@ namespace ConstructorAndDestructorApp
             
             Professor pr = new Professor(uno, dos);
             pr.Display();
+            pr.SecreNumbes(12, 13);
+            Professor pr1 = new Professor(22, 33);
+
+            
 
             Console.ReadLine();
         }

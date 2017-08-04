@@ -34,7 +34,7 @@ namespace BankApp_Console
                 {
                     Console.WriteLine("Ooops! Something went wrong!");
                 }
-                Console.WriteLine("Would you like to make another transaction? Or type NO or EXIT to finish the programm:");
+                Console.WriteLine("\nWould you like to make another transaction? Or type NO or EXIT to finish the programm:");
                 decision = Console.ReadLine().ToLower();
             } while (decision != "no" ^ decision != "n" ^ decision != "exit");
             bank.ByeBye();
