@@ -15,6 +15,7 @@ namespace DebugNineTwo
             DebugSeven4 seven4 = new DebugSeven4();
             seven4.SevenFour();
             Console.ReadLine();
+            
         }
     }
 }

@@ -9,9 +9,9 @@ class DebugSeven4
 {
    public void SevenFour()
    {
-      int[] firstArray = {10, 9, 2, 3, 5, 6}; // 2 + 3 = 5, 5 / 2 = 2.5!!
+      int[] firstArray = {10, 9, 2, 3, 5, 6}; //5+6=11   11/2=5.5
       int[] secondArray = { 112, 456, 782 }; // 456!!
-      int[] thirdArray = {9, 12, 45, 82, 84, 67, 2, 6}; //82 + 84 = 166,, 166 / 2 = 83!!
+      int[] thirdArray = {9, 12, 45, 82, 84, 67, 2, 6}; //12+45=57 57/2=28.5
       WriteLine("The median value of the first array is {0}",
          FindMedian(firstArray));
       WriteLine("The median value of the second array is {0}",
@@ -22,12 +22,16 @@ class DebugSeven4
    private static double FindMedian(int[] array)
    {
       double median;
-      int middle = (array.Length / 2); // =3
-        int mid2 = (array.Length / 2);
+      int middle = (array.Length / 2); // = 3        
       Array.Sort(array);
+        foreach (int item in array)
+        {
+            Console.Write(item + " ");
+        }
+
         if (array.Length % 2 == 0)
-        { median = (double)(array[mid2 - 1] + array[mid2]) / 2; } 
-                                        // 2   +     3 / 5
+        { median = (double)(array[middle - 1] + array[middle]) / 2; } 
+                                        // 2   +     3  /  5
         // 8 items, 0 to 7 index, 82 + 84,
         else
         { median = array[middle]; }
