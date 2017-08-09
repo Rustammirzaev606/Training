@@ -10,10 +10,13 @@ namespace DebugNineTwo
     {
         static void Main(string[] args)
         {
-            FixedDebugNine2 frenchToast = new FixedDebugNine2();
-            frenchToast.DebugNineTwo();
-            DebugSeven4 seven4 = new DebugSeven4();
-            seven4.SevenFour();
+            //FixedDebugNine2 frenchToast = new FixedDebugNine2();
+            //frenchToast.DebugNineTwo();
+            //DebugSeven4 seven4 = new DebugSeven4();
+            //seven4.SevenFour();
+            FixedDebugNine4 nine4 = new FixedDebugNine4();
+            nine4.DebugFour();
+
             Console.ReadLine();
             
         }
