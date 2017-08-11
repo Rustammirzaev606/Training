@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Enum_Practice_3
 {
+    
     enum Car
     {
+        
         Toyota = 1,
         Honda,
         Infinity,
@@ -15,6 +17,8 @@ namespace Enum_Practice_3
     }
     class Program
     {
+        
+
         static void Main(string[] args)
         {
             int buyCar;

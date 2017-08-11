@@ -43,9 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DebugEleven01.cs" />
+    <Compile Include="DebugEleven02.cs" />
     <Compile Include="DebugNine2.cs" />
     <Compile Include="DebugNine4.cs" />
     <Compile Include="DebugSeven4.cs" />
+    <Compile Include="DebugTen01.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

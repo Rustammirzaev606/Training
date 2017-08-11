@@ -10,6 +10,9 @@ namespace ComputerStoreApp
     {
         static void Main(string[] args)
         {
+            double qwe = 0.05;
+
+            Console.WriteLine(qwe.ToString("p"));
             Hardware mouse = new Hardware();
             mouse.ID = 1234;
             mouse.Name = "Rival";
