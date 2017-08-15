@@ -55,6 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BaseClass.cs" />
+    <Compile Include="HatsObjects.cs" />
     <Compile Include="Pants.xaml.cs">
       <DependentUpon>Pants.xaml</DependentUpon>
     </Compile>

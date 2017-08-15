@@ -20,32 +20,38 @@ namespace WpfApplication2
     /// </summary>
     public partial class MainWindow : Window
     {
+        Shirts shirtsCall = new Shirts();
+        Hats hatsCall = new Hats();
+        shoes shoesCall = new shoes();
+        Pants pantsCall = new Pants();
         public MainWindow()
         {
+            
+            
             InitializeComponent();
         }
 
         private void btnHats_Click(object sender, RoutedEventArgs e)
         {
-            Hats hatsCall = new Hats();
+            
             hatsCall.ShowDialog();
         }
 
         private void btnShoes_Click(object sender, RoutedEventArgs e)
         {
-            shoes shoesCall = new shoes();
+            
             shoesCall.ShowDialog();
         }
 
         private void btnPants_Click(object sender, RoutedEventArgs e)
         {
-            Pants pantsCall = new Pants();
+            
             pantsCall.ShowDialog();
         }
 
         private void btnShirt_Click(object sender, RoutedEventArgs e)
         {
-            Shirts shirtsCall = new Shirts();
+            
             shirtsCall.ShowDialog();
         }
     }

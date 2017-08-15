@@ -23,5 +23,12 @@ namespace WpfApplication2
         {
             InitializeComponent();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            HatsObjects clickHat = new HatsObjects();
+            clickHat.SomeHats(1);
+            HatsSubtotalLabel.Content = $"TOTAL: {clickHat.Subtotal.ToString("C")}";
+        }
     }
 }
