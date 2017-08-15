@@ -42,5 +42,11 @@ namespace WpfApplication2
             Pants pantsCall = new Pants();
             pantsCall.ShowDialog();
         }
+
+        private void btnShirt_Click(object sender, RoutedEventArgs e)
+        {
+            Shirts shirtsCall = new Shirts();
+            shirtsCall.ShowDialog();
+        }
     }
 }

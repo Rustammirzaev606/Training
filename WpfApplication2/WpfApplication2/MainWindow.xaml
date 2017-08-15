@@ -24,7 +24,7 @@
                 </ImageBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="btnShirt" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="154" Height="142" Margin="57,188,0,0">
+        <Button x:Name="btnShirt" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="154" Height="142" Margin="57,188,0,0" Click="btnShirt_Click">
             <Button.Background>
                 <ImageBrush>
                     <ImageBrush.ImageSource>

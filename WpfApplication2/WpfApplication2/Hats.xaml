@@ -17,7 +17,7 @@
 
 
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="88" Width="90">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="90">
             <TextBlock.Background>
                 <ImageBrush>
                     <ImageBrush.ImageSource>
@@ -26,7 +26,7 @@
                 </ImageBrush>
             </TextBlock.Background>
         </TextBlock>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="0,93,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="88" Width="90">
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="0,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="90">
             <TextBlock.Background>
                 <ImageBrush>
                     <ImageBrush.ImageSource>
@@ -35,7 +35,7 @@
                 </ImageBrush>
             </TextBlock.Background>
         </TextBlock>
-        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="0,186,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="88" Width="90">
+        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="0,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="90">
             <TextBlock.Background>
                 <ImageBrush>
                     <ImageBrush.ImageSource>
@@ -44,7 +44,7 @@
                 </ImageBrush>
             </TextBlock.Background>
         </TextBlock>
-        <TextBlock x:Name="textBlock1_Copy1" HorizontalAlignment="Left" Margin="339,0,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="88" Width="90">
+        <TextBlock x:Name="textBlock1_Copy1" HorizontalAlignment="Left" Margin="339,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="90">
             <TextBlock.Background>
                 <ImageBrush>
                     <ImageBrush.ImageSource>
@@ -53,16 +53,22 @@
                 </ImageBrush>
             </TextBlock.Background>
         </TextBlock>
-        <TextBlock x:Name="textBlock1_Copy2" HorizontalAlignment="Left" Margin="339,186,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="88" Width="90">
+        <TextBlock x:Name="textBlock1_Copy2" HorizontalAlignment="Left" Margin="339,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="90">
             <TextBlock.Background>
                 <ImageBrush ImageSource="D:\DepartmentStoreProjectPics\TopHats.jpg"/>
             </TextBlock.Background>
         </TextBlock>
-        <TextBlock x:Name="textBlock1_Copy3" HorizontalAlignment="Left" Margin="339,93,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="88" Width="90">
+        <TextBlock x:Name="textBlock1_Copy3" HorizontalAlignment="Left" Margin="339,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="90">
             <TextBlock.Background>
                 <ImageBrush ImageSource="D:\DepartmentStoreProjectPics\Homburg.jpg"/>
             </TextBlock.Background>
         </TextBlock>
+        <Label x:Name="label" Content="PRICE: $9.00" HorizontalAlignment="Left" Margin="90,93,0,0" VerticalAlignment="Top" Height="59" Width="213" IsEnabled="False" FontSize="36"/>
+        <Label x:Name="label_Copy" Content="PRICE: $9.00" HorizontalAlignment="Left" Margin="90,186,0,0" VerticalAlignment="Top" Height="59" Width="213" IsEnabled="False" FontSize="36"/>
+        <Label x:Name="label_Copy1" Content="PRICE: $9.00" HorizontalAlignment="Left" Margin="434,186,0,0" VerticalAlignment="Top" Height="59" Width="213" IsEnabled="False" FontSize="36"/>
+        <Label x:Name="label_Copy2" Content="PRICE: $9.00" HorizontalAlignment="Left" Margin="429,93,0,0" VerticalAlignment="Top" Height="59" Width="213" IsEnabled="False" FontSize="36"/>
+        <Label x:Name="label_Copy3" Content="PRICE: $9.00" HorizontalAlignment="Left" Margin="429,0,0,0" VerticalAlignment="Top" Height="59" Width="213" IsEnabled="False" FontSize="36"/>
+        <Label x:Name="label_Copy4" Content="PRICE: $9.00" HorizontalAlignment="Left" Margin="90,0,0,0" VerticalAlignment="Top" Height="59" Width="213" IsEnabled="False" FontSize="36"/>
 
     </Grid>
 </Window>

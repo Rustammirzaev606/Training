@@ -17,7 +17,7 @@
 
 
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="88" Width="90">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="90">
             <TextBlock.Background>
                 <ImageBrush>
                     <ImageBrush.ImageSource>
@@ -26,7 +26,7 @@
                 </ImageBrush>
             </TextBlock.Background>
         </TextBlock>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="0,93,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="88" Width="90">
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="0,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="90">
             <TextBlock.Background>
                 <ImageBrush>
                     <ImageBrush.ImageSource>
@@ -35,7 +35,7 @@
                 </ImageBrush>
             </TextBlock.Background>
         </TextBlock>
-        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="0,186,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="88" Width="90">
+        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="0,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="90">
             <TextBlock.Background>
                 <ImageBrush>
                     <ImageBrush.ImageSource>
@@ -44,7 +44,7 @@
                 </ImageBrush>
             </TextBlock.Background>
         </TextBlock>
-        <TextBlock x:Name="textBlock1_Copy1" HorizontalAlignment="Left" Margin="339,0,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="88" Width="90">
+        <TextBlock x:Name="textBlock1_Copy1" HorizontalAlignment="Left" Margin="339,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="90">
             <TextBlock.Background>
                 <ImageBrush>
                     <ImageBrush.ImageSource>
@@ -53,12 +53,12 @@
                 </ImageBrush>
             </TextBlock.Background>
         </TextBlock>
-        <TextBlock x:Name="textBlock1_Copy2" HorizontalAlignment="Left" Margin="339,186,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="88" Width="90">
+        <TextBlock x:Name="textBlock1_Copy2" HorizontalAlignment="Left" Margin="339,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="90">
             <TextBlock.Background>
                 <ImageBrush ImageSource="D:\DepartmentStoreProjectPics\download (1).jpg"/>
             </TextBlock.Background>
         </TextBlock>
-        <TextBlock x:Name="textBlock1_Copy3" HorizontalAlignment="Left" Margin="339,93,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="88" Width="90">
+        <TextBlock x:Name="textBlock1_Copy3" HorizontalAlignment="Left" Margin="339,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="90">
             <TextBlock.Background>
                 <ImageBrush ImageSource="D:\DepartmentStoreProjectPics\csgptmd1000024254_-00_blaklader-work-pants-x1600-with-utility-pockets.jpg"/>
             </TextBlock.Background>

@@ -58,6 +58,9 @@
     <Compile Include="Pants.xaml.cs">
       <DependentUpon>Pants.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Shirts.xaml.cs">
+      <DependentUpon>Shirts.xaml</DependentUpon>
+    </Compile>
     <Compile Include="shoes.xaml.cs">
       <DependentUpon>shoes.xaml</DependentUpon>
     </Compile>
@@ -81,6 +84,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Pants.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Shirts.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
